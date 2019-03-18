@@ -1,3 +1,4 @@
+@[toc]
 ps:一个从csdn迁移到hexo等静态博客的java程序
 github：https://github.com/dataiyangu/csdn2hexo 
 我的个人博客：https://mmmmmm.me
@@ -78,8 +79,8 @@ public class PropertiesUtil {
 ![image.png](https://upload-images.jianshu.io/upload_images/11496534-596747e63f2880df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 文件夹产生
 ![image.png](https://upload-images.jianshu.io/upload_images/11496534-a383c91475f3362b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-将文件夹中_posts和images文件中的内容拷贝到自己博客对应的
-![位置](https://upload-images.jianshu.io/upload_images/11496534-3dc0f3621e0b5174.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+将文件夹中_posts和images文件中的内容拷贝到自己博客对应的位置
+![](https://upload-images.jianshu.io/upload_images/11496534-3dc0f3621e0b5174.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 本地启动hexo博客测试
 ![image.png](https://upload-images.jianshu.io/upload_images/11496534-70d2c1602a9e80ce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 查看效果
