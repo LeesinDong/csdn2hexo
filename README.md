@@ -75,20 +75,9 @@ public class PropertiesUtil {
 ```
 找到 Main 这个类运行即可
 # 展示
-运行命令：
-![image.png](https://upload-images.jianshu.io/upload_images/11496534-01fe3b4f54d194be.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-文件夹产生
-![image.png](https://upload-images.jianshu.io/upload_images/11496534-8cbc21440c12713a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+详细效果展示：[利用爬虫爬取指定用户的CSDN博客文章转为md格式，目的是完成博客迁移博文到Hexo等金静态博客](https://blog.csdn.net/dataiyangu/article/details/88637312)
 
-将文件夹中_posts和images文件中的内容拷贝到自己博客对应的位置
-![image.png](https://upload-images.jianshu.io/upload_images/11496534-69d0178db86a2a68.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-本地启动hexo博客测试
-![image.png](https://upload-images.jianshu.io/upload_images/11496534-10f002f336aa1c2c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-查看效果
-![image.png](https://upload-images.jianshu.io/upload_images/11496534-7ab56a074f789ba2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 查看头部信息
 ![image.png](https://upload-images.jianshu.io/upload_images/11496534-c09953e83e0a9172.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
