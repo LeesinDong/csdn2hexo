@@ -76,21 +76,34 @@ public class PropertiesUtil {
 找到 Main 这个类运行即可
 # 展示
 运行命令：
+
 ![image.png](https://upload-images.jianshu.io/upload_images/11496534-596747e63f2880df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 文件夹产生
+
 ![image.png](https://upload-images.jianshu.io/upload_images/11496534-a383c91475f3362b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 将文件夹中_posts和images文件中的内容拷贝到自己博客对应的位置
+
 ![](https://upload-images.jianshu.io/upload_images/11496534-3dc0f3621e0b5174.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 本地启动hexo博客测试
+
 ![image.png](https://upload-images.jianshu.io/upload_images/11496534-70d2c1602a9e80ce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 查看效果
+
 ![image.png](https://upload-images.jianshu.io/upload_images/11496534-c75297b20cb973e5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 查看头部信息
+
 ![image.png](https://upload-images.jianshu.io/upload_images/11496534-c01dde7ff34b4e74.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 查看头部信息显示效果
+
 ![image.png](https://upload-images.jianshu.io/upload_images/11496534-e8d82c5291a5d012.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ![image.png](https://upload-images.jianshu.io/upload_images/11496534-2806b5fa05c16500.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 # 配置文件信息展示
 ```js
 # md文章头部配置
