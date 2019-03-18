@@ -1,5 +1,5 @@
-ps:自己写了一个从csdn迁移到hexo等静态博客的java程序
-github：https://github.com/dataiyangu/csdn2hexo
+ps:一个从csdn迁移到hexo等静态博客的java程序
+github：https://github.com/dataiyangu/csdn2hexo 
 我的个人博客：https://mmmmmm.me
 博客源码：https://github.com/dataiyangu/dataiyangu.github.io
 # 功能
