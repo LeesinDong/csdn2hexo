@@ -1,13 +1,17 @@
 package com.github.csccoder.csdn2md.util;
 
 import org.apache.http.*;
+import org.apache.http.client.HttpClient;
 import org.apache.http.client.HttpRequestRetryHandler;
+import org.apache.http.client.config.CookieSpecs;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpRequestBase;
+import org.apache.http.client.params.CookiePolicy;
+import org.apache.http.client.params.HttpClientParams;
 import org.apache.http.client.protocol.HttpClientContext;
 import org.apache.http.config.Registry;
 import org.apache.http.config.RegistryBuilder;
@@ -18,6 +22,7 @@ import org.apache.http.conn.socket.LayeredConnectionSocketFactory;
 import org.apache.http.conn.socket.PlainConnectionSocketFactory;
 import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
 import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.http.message.BasicNameValuePair;
@@ -100,7 +105,7 @@ public class HttpClientUtil {
         LayeredConnectionSocketFactory sslsf = SSLConnectionSocketFactory
                 .getSocketFactory();
         Registry<ConnectionSocketFactory> registry = RegistryBuilder
-                .<ConnectionSocketFactory> create().register("http", plainsf)
+                .<ConnectionSocketFactory>create().register("http", plainsf)
                 .register("https", sslsf).build();
         PoolingHttpClientConnectionManager cm = new PoolingHttpClientConnectionManager(
                 registry);
@@ -149,6 +154,7 @@ public class HttpClientUtil {
             }
         };
 
+        // 这里有警告
         CloseableHttpClient httpClient = HttpClients.custom()
                 .setConnectionManager(cm)
                 .setRetryHandler(httpRequestRetryHandler).build();
@@ -175,8 +181,8 @@ public class HttpClientUtil {
      *
      * @param url
      * @return
-     * @author SHANHY
      * @throws IOException
+     * @author SHANHY
      * @create 2015年12月18日
      */
     public static String post(String url, Map<String, Object> params) throws Exception {

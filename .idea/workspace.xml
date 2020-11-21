@@ -1,76 +1,265 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2d5e5ffc-b4f3-4bb9-94e0-07abe0b3aa3e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/csdn2hexo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/model/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/model/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/paser/ArticlePaser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/paser/ArticlePaser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/paser/CorePaser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/paser/CorePaser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/util/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/util/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/util/HttpClientUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/util/HttpClientUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/util/PropertiesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/util/PropertiesUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/util/html2markdown/HTML2Md.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/util/html2markdown/HTML2Md.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/csccoder/csdn2md/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/csccoder/csdn2md/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/csccoder/csdn2md/model/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/csccoder/csdn2md/model/Article.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/csccoder/csdn2md/paser/ArticlePaser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/csccoder/csdn2md/paser/ArticlePaser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/csccoder/csdn2md/paser/CorePaser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/csccoder/csdn2md/paser/CorePaser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/csccoder/csdn2md/util/FileUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/csccoder/csdn2md/util/FileUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/csccoder/csdn2md/util/HttpClientUtil$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/csccoder/csdn2md/util/HttpClientUtil$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/csccoder/csdn2md/util/HttpClientUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/csccoder/csdn2md/util/HttpClientUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/csccoder/csdn2md/util/PropertiesUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/csccoder/csdn2md/util/PropertiesUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/csccoder/csdn2md/util/html2markdown/HTML2Md.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/csccoder/csdn2md/util/html2markdown/HTML2Md.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/blog_csdn.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/img/blog_csdn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/blog_hexo.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/img/blog_hexo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/dir_0.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/img/dir_0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/dir_html.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/img/dir_html.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/dir_md.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/img/dir_md.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/html_detail.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/img/html_detail.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/markdown_detail.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/img/markdown_detail.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img/run_out.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/img/run_out.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectId" id="1kYmSSKPzD76T4zaMGc6bizxC1I" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.csccoder.csdn2md.Main" />
+      <module name="csdn2hexo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.csccoder.csdn2md.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
       </option>
-      <patterns />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.6</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d5e5ffc-b4f3-4bb9-94e0-07abe0b3aa3e" name="Default Changelist" comment="" />
+      <created>1605885898842</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605885898842</updated>
+      <workItem from="1605885899949" duration="315000" />
+      <workItem from="1605886234243" duration="284000" />
+      <workItem from="1605886541104" duration="1714000" />
+      <workItem from="1605888286070" duration="70000" />
+      <workItem from="1605888377158" duration="1552000" />
+      <workItem from="1605936692082" duration="9851000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1605955850564">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1605955850564" />
+    <state x="599" y="338" width="636" height="562" key="#xdebugger.evaluate" timestamp="1605947298254">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="599" y="338" width="636" height="562" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1605947298254" />
+    <state width="1398" height="208" key="GridCell.Tab.0.bottom" timestamp="1605959399933">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="208" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605959399933" />
+    <state width="1398" height="290" key="GridCell.Tab.0.bottom/0.23.1440.800@0.23.1440.800" timestamp="1605958791825" />
+    <state width="1398" height="392" key="GridCell.Tab.0.bottom/0.23.1440.803@0.23.1440.803" timestamp="1605956618114" />
+    <state width="1398" height="208" key="GridCell.Tab.0.center" timestamp="1605959399930">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="208" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605959399930" />
+    <state width="1398" height="290" key="GridCell.Tab.0.center/0.23.1440.800@0.23.1440.800" timestamp="1605958791824" />
+    <state width="1398" height="392" key="GridCell.Tab.0.center/0.23.1440.803@0.23.1440.803" timestamp="1605956618113" />
+    <state width="1398" height="208" key="GridCell.Tab.0.left" timestamp="1605959399929">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="208" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605959399929" />
+    <state width="1398" height="290" key="GridCell.Tab.0.left/0.23.1440.800@0.23.1440.800" timestamp="1605958791823" />
+    <state width="1398" height="392" key="GridCell.Tab.0.left/0.23.1440.803@0.23.1440.803" timestamp="1605956618113" />
+    <state width="1398" height="208" key="GridCell.Tab.0.right" timestamp="1605959399931">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="208" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605959399931" />
+    <state width="1398" height="290" key="GridCell.Tab.0.right/0.23.1440.800@0.23.1440.800" timestamp="1605958791824" />
+    <state width="1398" height="392" key="GridCell.Tab.0.right/0.23.1440.803@0.23.1440.803" timestamp="1605956618114" />
+    <state width="1398" height="243" key="GridCell.Tab.1.bottom" timestamp="1605956130900">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="243" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605956130900" />
+    <state width="1398" height="417" key="GridCell.Tab.1.bottom/0.23.1440.803@0.23.1440.803" timestamp="1605955506918" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.23.1440.805@0.23.1440.805" timestamp="1605945372760" />
+    <state width="1398" height="243" key="GridCell.Tab.1.center" timestamp="1605956130898">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="243" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1605956130898" />
+    <state width="1398" height="417" key="GridCell.Tab.1.center/0.23.1440.803@0.23.1440.803" timestamp="1605955506917" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center/0.23.1440.805@0.23.1440.805" timestamp="1605945372759" />
+    <state width="1398" height="243" key="GridCell.Tab.1.left" timestamp="1605956130898">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="243" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1605956130897" />
+    <state width="1398" height="417" key="GridCell.Tab.1.left/0.23.1440.803@0.23.1440.803" timestamp="1605955506915" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left/0.23.1440.805@0.23.1440.805" timestamp="1605945372758" />
+    <state width="1398" height="243" key="GridCell.Tab.1.right" timestamp="1605956130899">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="243" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1605956130899" />
+    <state width="1398" height="417" key="GridCell.Tab.1.right/0.23.1440.803@0.23.1440.803" timestamp="1605955506918" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right/0.23.1440.805@0.23.1440.805" timestamp="1605945372759" />
+    <state x="221" y="23" width="1024" height="800" key="SettingsEditor" timestamp="1605949233434">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="23" width="1024" height="800" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1605949233434" />
+    <state width="720" height="450" key="XDebugger.FullValuePopup" timestamp="1605946325754">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="720" height="450" key="XDebugger.FullValuePopup/0.0.1440.900@0.0.1440.900" timestamp="1605946325754" />
+    <state x="418" y="205" width="604" height="490" key="find.popup" timestamp="1605959360940">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="418" y="205" width="604" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1605959360940" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/util/FileUtil.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/util/HexoMdUtil.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/paser/CorePaser.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/paser/ArticlePaser.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/util/HexoMdUtil.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/csccoder/csdn2md/util/FileUtil.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

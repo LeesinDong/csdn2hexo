@@ -25,9 +25,9 @@ public class FileUtil {
         String html_path = PropertiesUtil.getProperties("html_path");
         String image_path = PropertiesUtil.getProperties("image_path");
         String md_path = PropertiesUtil.getProperties("md_path");
-        htmlDir = path +"/" +html_path+"/";
-        mdDir = path + "/"+md_path+"/" ;
-        imgDir = path + "/"+image_path+"/";
+        htmlDir = path + "/" + html_path + "/";
+        mdDir = path + "/" + md_path + "/";
+        imgDir = path + "/" + image_path + "/";
         if (img) img = false;
         else img = imgSwitch;
         judeDirExists(dir, htmlDir, mdDir, imgDir);
@@ -55,7 +55,7 @@ public class FileUtil {
 
     private void saveHtml(Article article) {
         String fileName = article.getTitle();
-        if("".equals(fileName)) return;
+        if ("".equals(fileName)) return;
         fileName = (fileName == null ? null : FilePattern.matcher(fileName).replaceAll("")); //过滤文件名特殊字符
         String filePath = htmlDir + fileName;
         save(article.getContent(), filePath);
@@ -63,9 +63,13 @@ public class FileUtil {
     }
 
     private void saveHexomd(Article article) {
-        String mdhead = HexoMdUtil.getHeader(article);
+        String mdhead = "";
+        Boolean head = Boolean.valueOf(PropertiesUtil.getProperties("head"));
+        if (head) {
+            mdhead = HexoMdUtil.getHeader(article);
+        }
         try {
-            SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             String fileName = "";
             String MdFileName = "";
             fileName = article.getTitle();
@@ -75,10 +79,9 @@ public class FileUtil {
 
             String MdFileName_type = PropertiesUtil.getProperties("MdFileName_type");
             if (MdFileName_type.equals("date")) {
-                MdFileName =  dateFormat.format(article.getDate()).replace(" ","-").replaceAll(":","-");
-            }else{
+                MdFileName = dateFormat.format(article.getDate()).replace(" ", "-").replaceAll(":", "-");
+            } else {
                 MdFileName = article.getTitle();
-
             }
             String filePath = mdDir + MdFileName + ".md";
             save(realContent, filePath);
@@ -95,18 +98,20 @@ public class FileUtil {
 
     public static String getPicture(String url) {
         String fix = null;
-
         if (img && !url.equals("")) {
             URL ur;
 //            https://img-blog.csdnimg.cn/20190316212631882.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RhdGFpeWFuZ3U=,size_16,color_FFFFFF,t_70
             BufferedInputStream in;
             ByteArrayOutputStream outStream;
             try {
-                 fix = url.substring(url.lastIndexOf("img-blog.csdnimg.cn") +20 , url.length());
-                fix = fix.replace("/", "-");
-                fix = fix.replace(".png","-");
-                fix = fix.replace("?","-");
-                fix = fix + ".png";
+                // fix = url.substring(url.lastIndexOf("img-blog.csdnimg.cn") + 20, url.length());
+                // fix = fix.replace("/", "-");
+                // fix = fix.replace(".png", "-");
+                // fix = fix.replace("?", "-");
+                // fix = fix + ".png";
+
+                // 直接uuid，csdn的太长
+                fix = UUID.randomUUID() + ".png";
 
                 String fileName = UUID.randomUUID().toString();
                 ur = new URL(url);
@@ -125,23 +130,20 @@ public class FileUtil {
                 }
 
 
-                File fileOut = new File(imgDir + fix );
+                File fileOut = new File(imgDir + fix);
                 FileOutputStream op = new FileOutputStream(fileOut);
 
                 op.write(bytes);
                 op.close();
                 in.close();
                 outStream.close();
-                return fix ;
+                return fix;
             } catch (Exception e) {
                 e.printStackTrace();
-                return fix ;
+                return fix;
             }
-
-
         }
         return fix;
-
     }
 
     private static String GetFileSuffix(byte[] fileData) {
@@ -180,10 +182,9 @@ public class FileUtil {
             File imgDirP = new File(imgDirPath);
             if (htmlDirP.mkdirs() && mdDirP.mkdirs() && imgDirP.mkdirs()) {
                 System.out.println("目录创建成功！");
-            }
-            else{
-                System.out.println(htmlDirP.mkdirs() );
-                System.out.println("目录已经存在，如果还是不行请尝试删掉根目录下所有文件" );
+            } else {
+                System.out.println(htmlDirP.mkdirs());
+                System.out.println("目录已经存在，如果还是不行请尝试删掉根目录下所有文件");
             }
 
         } catch (Exception e) {

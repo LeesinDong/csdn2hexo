@@ -4,25 +4,33 @@ import com.github.csccoder.csdn2md.paser.CorePaser;
 import com.github.csccoder.csdn2md.util.PropertiesUtil;
 
 import java.io.IOException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 
-public class Main {
+public class Main implements Runnable{
+
+	static ExecutorService service = Executors.newFixedThreadPool(1);
 
 	static String csdn_host = PropertiesUtil.getProperties("csdn_host");
-
-	private static String host = csdn_host;
+	private static final String HOST = csdn_host;
+	private static final String AUTHOR = PropertiesUtil.getProperties("casn_name");
+	/**
+	 * 文件保存路径（绝对路径）
+	 */
+	private static final String FILE_PATH = PropertiesUtil.getProperties("file_Path");
+	//csdn 用户名
 
 	public static void main(String args[]) throws IOException {
-		String casn_name = PropertiesUtil.getProperties("casn_name");
-		String file_Path = PropertiesUtil.getProperties("file_Path");
+		service.execute(new Main());
+	}
 
-		String author = casn_name;                           //csdn用户名
-
-		String dirPath = file_Path;   //文件保存路径（绝对路径）
-
-		new CorePaser().parse(host, author, dirPath, true);  //是否爬取图片 默认false
-
-
+	public void run() {
+		new CorePaser().parse(HOST,
+				AUTHOR,
+				FILE_PATH,
+				//是否爬取图片 默认false
+				true);
 	}
 }
 

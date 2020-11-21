@@ -32,7 +32,7 @@ public class CorePaser {
 
 
 
-			System.out.println("正在爬去第" + pageCount + "页");
+			System.out.println("正在爬取第" + pageCount + "页");
 			try {
 				int url_way = Integer.parseInt(PropertiesUtil.getProperties("url_way"));
 
@@ -68,8 +68,8 @@ public class CorePaser {
 				}
 
 
-				//获得当前页所有文章的URI
-//                System.out.println(document);
+				// 获得当前页所有文章的URI
+				// System.out.println(document);
 
 				if (uris.size() == 0) {
 					break;
@@ -79,8 +79,10 @@ public class CorePaser {
 						System.out.println("网址中没有包含用户名");
 						continue;
 					}
+					// 核心
 					Article article = ArticlePaser.parseArticle(uri);
 					System.out.println("第" + recordCount + "篇  =>" + article.getId() + "  " + article.getTitle());
+					// 核心
 					fileUtil.html2HexoMd(article);
 					recordCount++;
 				}

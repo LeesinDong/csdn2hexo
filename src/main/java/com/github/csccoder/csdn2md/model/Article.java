@@ -8,6 +8,8 @@ public class Article {
     private String content;
     private String author;
     private String tags[];
+    private String catagory[];
+    private Date date;
 
     public String getAuthor() {
         return author;
@@ -16,10 +18,6 @@ public class Article {
     public void setAuthor(final String author) {
         this.author = author;
     }
-
-    private String catagory[];
-    private Date date;
-
 
     public int getId() {
         return id;

@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class ArticlePaser {
     //2017-10-07 23:13
-    private static final SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy年MM月dd日 hh:mm:ss");
+    private static final SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 
     public static Article parseArticle(String url){
         Document document=CorePaser.getDocument(url);
@@ -21,10 +21,8 @@ public class ArticlePaser {
         String articleId=parseArticleId(url);
         String articleTitle=document.select(".article-title-box>h1").text().trim();
         String articleContent=document.select("#article_content").html();
-//        String tags[]=parseTags(document);
-        String tags[]=PropertiesUtil.getProperties("tags").split(",");
-//        String category = parseCata(document);
-        String category[] = PropertiesUtil.getProperties("categories").split(",");
+        String[] tags =PropertiesUtil.getProperties("tags").split(",");
+        String[] category = PropertiesUtil.getProperties("categories").split(",");
         String author = PropertiesUtil.getProperties("author");
         article.setAuthor(author);
         article.setId(Integer.parseInt(articleId));
@@ -32,22 +30,14 @@ public class ArticlePaser {
         article.setContent(articleContent);
         article.setCatagory(category);
         try {
-
-            System.out.println(document);
-
-            Elements element = document.select(".article-bar-top>.time");
-
-//            String element1 = element.text();
-
-            System.out.println("element--"+element.html());
-
+            // Elements element = document.select(".article-bar-top>.time");
+            Elements element = document.select(".bar-content>.time");
             article.setDate(dateFormat.parse(element.text()));
         } catch (Exception e) {
             System.out.println("应该是被反爬虫了,换个wifi或者网络试试~~~~~~~~~~~~~~~~~~~~~~~");
             e.printStackTrace();
         }
         article.setTags(tags);
-
         return article;
     }
 

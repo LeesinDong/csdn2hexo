@@ -15,11 +15,11 @@ public class PropertiesUtil {
 			Properties pp = new Properties();
 
 			//通过idea运行程序
-//			InputStream inputStream = Main.class.getClassLoader().getResourceAsStream("config.properties");
+			InputStream inputStream = Main.class.getClassLoader().getResourceAsStream("config.properties");
 
 			//通过java -jar运行程序
-			String filePath = System.getProperty("user.dir")+ "/config.properties";
-			InputStream inputStream = new BufferedInputStream(new FileInputStream(filePath));
+			// String filePath = System.getProperty("user.dir")+ "/config.properties";
+			// InputStream inputStream = new BufferedInputStream(new FileInputStream(filePath));
 
 			pp.load(inputStream);
 			value= (String) pp.get(key);

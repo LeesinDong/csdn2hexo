@@ -192,7 +192,6 @@ public class HTML2Md {
 
   private static void processElement(Element element, ArrayList<MDLine> lines) {
     Tag tag = element.tag();
-
     String tagName = tag.getName();
     if (tagName.equals("div")) {
       div(element, lines);
@@ -213,7 +212,14 @@ public class HTML2Md {
     } else if (tagName.equals("img")) {
       img(element, lines);
     } else if (tagName.equals("code")) {
-      code(element, lines);
+
+      Element e = (Element)element.parentNode();
+      // ` ` 这种code
+      if (e.tag().getName().equals("p")) {
+        codeP(element, lines);
+      } else {
+        code(element, lines);
+      }
     } else if (tagName.equals("ul")) {
       ul(element, lines);
     } else if (tagName.equals("ol")) {
@@ -412,6 +418,11 @@ public class HTML2Md {
     line.append("```");
     lines.add(line);
     lines.add(new MDLine(MDLine.MDLineType.None, 0, ""));
+  }
+
+  private static void codeP(Element element, ArrayList<MDLine> lines) {
+    MDLine line = getLastLine(lines);
+    line.append("`"+getTextContent(element)+"`");
   }
 
   private static void ul(Element element, ArrayList<MDLine> lines) {
