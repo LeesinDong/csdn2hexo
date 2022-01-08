@@ -1,9 +1,4 @@
-@[toc]
-ps:一个从csdn迁移到hexo等静态博客的java程序
-github：https://github.com/dataiyangu/csdn2hexo 
-我的个人博客：https://mmmmmm.me
-博客源码：https://github.com/dataiyangu/dataiyangu.github.io
-tip:可能会出现代理ip被反爬虫，https://github.com/dataiyangu/proxy_ip 获取可用的代理ip，自己二次创作试试。
+
 
 # 功能
 概述：利用爬虫爬取指定用户的CSDN博客文章转为md格式，目的是完成博客迁移
